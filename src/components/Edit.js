@@ -18,17 +18,17 @@ const Edit = (props) => {
             <details>
                 <summary>Edit</summary>
                 <form onSubmit={handleSubmit}>
-                <label htmlFor="name">Name: </label>
+                <label htmlFor="name" className="add">Name: </label>
                 <br/>
                 <input type="text" value={recommendation.name} name="name" onChange={handleChange}/>
                 <br/>
                 <br/>
-                <label htmlFor="gov">Government: </label>
+                <label htmlFor="gov" className="add">Government: </label>
                 <br/>
                 <input type="text" value={recommendation.gov} name="gov" onChange={handleChange}/>
                 <br/>
                 <br/>
-                <label htmlFor="description">Description: </label>
+                <label htmlFor="description" className="add">Description: </label>
                 <br/>
                 <textarea type='text' value={recommendation.description}  name='description' rows='10' cols='50' onChange={handleChange}/>
                 <br/>

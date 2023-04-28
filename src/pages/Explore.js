@@ -903,34 +903,87 @@ const Explore = () => {
            
             <div className="side-panel">
                 <ul>
-                    <a href="#" onClick={alexandriaToggle}><li className="side">Alexandria</li></a>
-                    <a href="#" onClick={alsharqiyaToggle}><li className="side">Al-Sharqia</li></a>
-                    <a href="#" onClick={assuitToggle}><li className="side">Assuit</li></a>
-                    <a href="#" onClick={aswanToggle}><li className="side">Aswan</li></a>
-                    <a href="#" onClick={beheiraToggle}><li className="side">Beheira</li></a>
-                    <a href="#" onClick={benisuefToggle}><li className="side">Beni Suef</li></a>
-                    <a href="#" onClick={cairoToggle}><li className="side">Cairo</li></a>
-                    <a href="#" onClick={dakahliaToggle}><li className="side">Dakahlia</li></a>
-                    <a href="#" onClick={damiettaToggle}><li className="side">Damietta</li></a>
-                    <a href="#" onClick={fayoumToggle}><li className="side">Fayoum</li></a>
-                    <a href="#" onClick={gharbiaToggle}><li className="side">Gharbia</li></a>
-                    <a href="#" onClick={gizaToggle}><li className="side">Giza</li></a>
-                    <a href="#" onClick={ismailiaToggle}><li className="side">Ismailia</li></a>
-                    <a href="#" onClick={kafrToggle}><li className="side">Kafr El-Sheikh</li></a>
-                    <a href="#" onClick={luxorToggle}><li className="side">Luxor</li></a>
-                    <a href="#" onClick={matrouhToggle}><li className="side">Matrouh</li></a>
-                    <a href="#" onClick={menofiaToggle}><li className="side">Menofia</li></a>
-                    <a href="#" onClick={minyaToggle}><li className="side">Minya</li></a>
-                    <a href="#" onClick={newvalleyToggle}><li className="side">New Valley</li></a>
-                    <a href="#" onClick={northsinaiToggle}><li className="side">North Sinai</li></a>
-                    <a href="#" onClick={portsaidToggle}><li className="side">Port Said</li></a>
-                    <a href="#" onClick={qenaToggle}><li className="side">Qena</li></a>
-                    <a href="#" onClick={qualyubiaToggle}><li className="side">Qualyubia</li></a>
-                    <a href="#" onClick={redseaToggle}><li className="side">Red Sea</li></a>
-                    <a href="#" onClick={sohagToggle}><li className="side">Sohag</li></a>
-                    <a href="#" onClick={southsinaiToggle}><li className="side">South Sinai</li></a>
-                    <a href="#" onClick={suezToggle}><li className="side">Suez</li></a>
-
+                    <div className="gov-list">
+                        <img src="alex.png" alt="" className="flag"/><li className="side" onClick={alexandriaToggle}>Alexandria</li>
+                    </div>
+                    <div className="gov-list">
+                        <img src="sharqia.png" alt="" className="flag"/><li className="side" onClick={alsharqiyaToggle}>Al-Sharqia</li>
+                    </div>
+                    <div className="gov-list">
+                        <img src="assiut.png" alt="" className="flag"/><li className="side" onClick={assuitToggle}>Assuit</li>
+                    </div>
+                    <div className="gov-list">
+                    <img src="aswan.png" alt="" className="flag"/><li className="side" onClick={aswanToggle}>Aswan</li>
+                    </div>
+                    <div className="gov-list">
+                    <img src="behira.png" alt="" className="flag"/><li className="side" onClick={beheiraToggle}>Beheira</li>
+                    </div>
+                    <div className="gov-list">
+                        <img src="benisuef.png" alt="" className="flag"/><li className="side" onClick={benisuefToggle}>Beni Suef</li>
+                    </div>
+                    <div className="gov-list">
+                        <img src="cairo.png" alt="" className="flag"/><li className="side" onClick={cairoToggle}>Cairo</li>
+                    </div>
+                    <div className="gov-list">
+                        <img src="dakahlia.png" alt="" className="flag"/><li className="side" onClick={dakahliaToggle}>Dakahlia</li>
+                    </div>
+                    <div className="gov-list">
+                        <img src="damietta.png" alt="" className="flag"/><li className="side" onClick={damiettaToggle}>Damietta</li>
+                    </div>
+                    <div className="gov-list">
+                        <img src="fayoum.png" alt="" className="flag"/><li className="side" onClick={fayoumToggle}>Fayoum</li>
+                    </div>
+                    <div className="gov-list">
+                        <img src="gharbia.png" alt="" className="flag"/><li className="side" onClick={gharbiaToggle}>Gharbia</li>
+                    </div>
+                    <div className="gov-list">
+                        <img src="giza.png" alt="" className="flag"/><li className="side" onClick={gizaToggle}>Giza</li>
+                    </div>
+                    <div className="gov-list">
+                        <img src="ismailia.png" alt="" className="flag"/><li className="side" onClick={ismailiaToggle}>Ismailia</li>
+                    </div>
+                    <div className="gov-list">
+                        <img src="kafr.png" alt="" className="flag"/><li className="side" onClick={kafrToggle}>Kafr El-Sheikh</li>
+                    </div>
+                    <div className="gov-list">
+                        <img src="luxor.png" alt="" className="flag"/><li className="side" onClick={luxorToggle}>Luxor</li>
+                    </div>
+                    <div className="gov-list">
+                        <img src="matrouh.png" alt="" className="flag"/><li className="side" onClick={matrouhToggle}>Matrouh</li>
+                    </div>
+                    <div className="gov-list">
+                        <img src="menofeya.png" alt="" className="flag"/><li className="side" onClick={menofiaToggle}>Menofia</li>
+                    </div>
+                    <div className="gov-list">
+                        <img src="minya.png" alt="" className="flag"/><li className="side" onClick={minyaToggle}>Minya</li>
+                    </div>
+                    <div className="gov-list">
+                        <img src="newvalley.png" alt="" className="flag"/><li className="side" onClick={newvalleyToggle}>New Valley</li>
+                    </div>
+                    <div className="gov-list">
+                        <img src="northsinai.png" alt="" className="flag"/><li className="side" onClick={northsinaiToggle}>North Sinai</li>
+                    </div>
+                    <div className="gov-list">
+                        <img src="portsaid.png" alt="" className="flag"/><li className="side" onClick={portsaidToggle}>Port Said</li>
+                    </div>
+                    <div className="gov-list">
+                        <img src="qena.png" alt="" className="flag"/><li className="side" onClick={qenaToggle}>Qena</li>
+                    </div>
+                    <div className="gov-list">
+                        <img src="qalyubia.png" alt="" className="flag"/><li className="side" onClick={qualyubiaToggle}>Qualyubia</li>
+                    </div>
+                    <div className="gov-list">
+                        <img src="redsea.png" alt="" className="flag"/><li className="side" onClick={redseaToggle}>Red Sea</li>
+                    </div>
+                    <div className="gov-list">
+                        <img src="sohag.png" alt="" className="flag"/><li className="side" onClick={sohagToggle}>Sohag</li>
+                    </div>
+                    <div className="gov-list">
+                        <img src="southsinai.png" alt="" className="flag"/><li className="side" onClick={southsinaiToggle}>South Sinai</li>
+                    </div>
+                    <div className="gov-list">
+                        <img src="suez.png" alt="" className="flag"/><li className="side" onClick={suezToggle}>Suez</li>
+                    </div>
                 </ul>
             </div>
             </div>

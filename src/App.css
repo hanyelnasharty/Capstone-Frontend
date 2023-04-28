@@ -1,53 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Caveat&family=Dancing+Script&family=Poppins:wght@400;700&family=Sedgwick+Ave+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dosis:wght@600&display=swap');
+
+/* font-family: 'Bruno Ace', cursive;
+font-family: 'Caveat', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Sedgwick Ave Display', cursive; */
+
+body {
+  color: whitesmoke;
+  background-color: #EFCF83;
+}
+
+nav {
+  text-align: center;
+}
+
 .nav {
   display: flex;
-  background-color: antiquewhite;
+  background-color: #54786A;
+  border-radius: 15px;
   padding: 15px;
 }
 
 .nav-item {
   margin: 10px;
+  list-style-type: none;
+  font-family: 'Poppins', sans-serif;
+  margin-left: 100px;
+}
+
+#nav-item {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: larger;
+  font-weight: 600;
 }
 
 .header {
   text-align: center;
+  color: #624B1C;
 }
 
 #home {
   text-align: center;
+  color: black;
+  line-height: 300%;
+}
+
+#about {
+  text-align: center;
+  color: black;
+  line-height: 180%;
+}
+
+.banner-alex {
+  margin-top: -100px;
+  height: 200px;
+  width: 750px;
+  border-radius: 15px;
+  /* background-image: url("alex-back.jpeg"); */
+  background-size: cover;
+  grid-column-end: 11;
+  text-align: center;
+}
+
+.banner-sharqiya {
+  margin-top: -100px;
+  height: 200px;
+  width: 750px;
+  border-radius: 15px;
+  /* background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Alfath.Mosq.In.Zagazig_%D9%85%D8%B3%D8%AC%D8%AF_%D8%A7%D9%84%D9%81%D8%AA%D8%AD_%D8%A8%D8%A7%D9%84%D8%B2%D9%82%D8%A7%D8%B2%D9%8A%D9%82_2014-09-29_0137_DSCN0142.JPG/800px-Alfath.Mosq.In.Zagazig_%D9%85%D8%B3%D8%AC%D8%AF_%D8%A7%D9%84%D9%81%D8%AA%D8%AD_%D8%A8%D8%A7%D9%84%D8%B2%D9%82%D8%A7%D8%B2%D9%8A%D9%82_2014-09-29_0137_DSCN0142.JPG'); */
+  background-size: contain;
+  grid-column-end: 11;
+  text-align: center;
+}
+
+
+#sight {
+  height: 150px;
+  width: 200px;
+  margin: 0 10px 0 10px;
+  border: solid rgb(229, 187, 187) 5px;
+  border-radius: 5px;
 }
 
 .banner {
-  height: 100px;
+  margin-top: -100px;
+  height: 200px;
   width: 750px;
-  background-color: black;
   grid-column-end: 11;
+  text-align: center;
 }
+
+.gov-head {
+  padding: 100px;
+  color: whitesmoke;
+  font-family: 'Dancing Script', cursive;
+  font-size: 64px;
+  text-shadow: 2px 4px 4px black;
+}
+
 .container {
   display: grid;
   grid-template-columns: repeat(11, 1fr);
-  grid-template-rows: repeat(2, 1fr)
+  grid-template-rows: repeat(1, 1fr)
 }
 
 .side-panel {
+  display: flex;
+  height: fit-content;
   grid-row-start: 1;
   grid-row-end: 1;
   grid-column-start: 1;
-  grid-column-end: 4;
-  border: 5px solid black;
-  background-color: aquamarine;
+  grid-column-end: 5;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: #54786A;
+  box-shadow: 6px 5px 5px #AA5725;
 }
 
 .govs {
-  grid-column-start: 6;
-  border: 2px solid black;
+  grid-column-start: 8;
+  border: 1px solid black;
+  border-radius: 10px;
   padding: 10px;
-  background-color: blanchedalmond;
+  background-color: #54786A;
+  box-shadow: 6px 5px 5px #AA5725;
 }
 
-li {
-  list-style-type: none;
-}
 
 .side {
+  padding: 1px;
+  margin: 7px 3px 0 2px;
+  cursor: pointer;
+  text-decoration: underline;
+  list-style-type: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+.flag {
+  height: 30px;
+  width: 30px;
+  border-radius: 5px;
+  margin-right: 5px;
+  float: left;
+}
+
+.gov-list {
+  display: flex;
+  align-items: flex-end;
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+  font-size: larger;
+  line-height: 160%;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: black;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: #EFCF83;
+}
+
+h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.h3 {
+  color: black;
+}
+
+.h4 {
+  color: black;
+}
+
+.p {
+  color: black;
+}
+
+.rec {
+  font-family: 'Poppins', sans-serif;
+}
+
+.add {
+  color: black;
+}
+
+summary {
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  list-style-type: none;
+  border: 3px solid burlywood;
+  border-radius: 10px;
+  width: fit-content;
+  padding: 5px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+button {
+  font-family: 'Poppins', sans-serif;
+  border-radius: 5px;
+  background-color: crimson;
+  color: white;
+}
+
+#add-btn {
+  font-family: 'Poppins', sans-serif;
+  border-radius: 5px;
+  background-color: rgb(97, 194, 1);
+}
+
+.rec-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.rec-card {
+  border: 4px solid black;
+  border-radius: 15px;
+  width: 45%;
+  margin: 10px;
   padding: 10px;
 }

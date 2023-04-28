@@ -4,7 +4,7 @@ const About = () => {
     return (
         <>
             <h1 className="header">About</h1>
-            <p>Welcome to our website, where we aim to take you on a journey through the fascinating land of Egypt. Our mission is to provide you with an informative and engaging experience that captures the essence of Egypt's rich history and cultural heritage.
+            <p id="about">Welcome to our website, where we aim to take you on a journey through the fascinating land of Egypt. Our mission is to provide you with an informative and engaging experience that captures the essence of Egypt's rich history and cultural heritage.
             <br/>
             <br/>
             Egypt is a land of ancient wonders, with a history that spans over 5,000 years. From the mighty Pyramids of Giza to the iconic Sphinx, Egypt's ancient monuments have stood the test of time and continue to inspire awe and wonder. Beyond the ancient wonders, Egypt is also home to a wealth of natural attractions, including the stunning beaches of the Red Sea and the lush Nile River Valley.

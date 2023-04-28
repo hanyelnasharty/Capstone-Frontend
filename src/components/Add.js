@@ -14,24 +14,33 @@ const Add = (props) => {
     }
     return (
         <>
-            <form onSubmit={handleSubmit}>
-                <label htmlFor="name">Name: </label>
+            <div class="container">
+                <form onSubmit={handleSubmit}>
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label" htmlFor="name" className="add">Name: </label>
+                    <div class="col-sm-2">
+                        <input class="form-control" type="text" value={recommendation.name} name="name" onChange={handleChange}/>
+                    </div>
+                </div>
                 <br/>
-                <input type="text" value={recommendation.name} name="name" onChange={handleChange}/>
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label" htmlFor="gov" className="add">Government: </label>
+                    <div class="col-sm-2">
+                        <input class="form-control" type="text" value={recommendation.gov} name="gov" onChange={handleChange}/>
+                    </div>
+                </div>
                 <br/>
-                <br/>
-                <label htmlFor="gov">Government: </label>
-                <br/>
-                <input type="text" value={recommendation.gov} name="gov" onChange={handleChange}/>
-                <br/>
-                <br/>
-                <label htmlFor="description">Description: </label>
-                <br/>
-                <textarea type='text' value={recommendation.description}  name='description' rows='10' cols='50' onChange={handleChange}/>
-                <br/>
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label" htmlFor="description" className="add">Description: </label>
+                    <div class="col-sm-6">
+                        <textarea class="form-control" type='text' value={recommendation.description}  name='description' rows='10' cols='50' onChange={handleChange}/>
+                    </div>
+                </div>
                 <br/>
                 <input type="submit" />
             </form>
+            </div>
+            <button onClick={props.hideAdd}>Cancel</button>
         </>
     )
 }

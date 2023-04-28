@@ -7,6 +7,7 @@ import Edit from "../components/Edit"
 const Recommendations = (props) => {
 
     const [recommendations, setRecommendations] = useState([])
+    const [add, setAdd] = useState(false)
 
   const getRecommendations = () => {
     axios.get('http://localhost:8000/api/recommendations').then(
@@ -38,35 +39,48 @@ const Recommendations = (props) => {
     })
   }
 
+  const addToggle = () => {
+    setAdd(true)
+  }
+
+  const hideAdd = () => {
+    setAdd(false)
+  }
+
   useEffect(() => {
     getRecommendations()
   }, [])
     return (
         <>
             <h1 className="header">User Recommendations</h1>
-            <h3>Add your recommendations below!</h3>
-            <Add 
+            <h3 className="add">Add your recommendations below!</h3>
+            <button id="add-btn" onClick={addToggle}>Add</button>
+            {add ? <Add 
                 handleChange={props.handleChange} 
                 handleSubmit={props.handleSubmit} 
                 handleCreate={handleCreate}
                 recommendation={props.recommendation}
-                />
-                {recommendations.map((recommendation) => {
-                return (
-                    <div>
-                        <h3>Name: {recommendation.name}</h3>
-                        <h4>Government: {recommendation.gov}</h4>
-                        <p>Recommendation: {recommendation.description}</p>
-                        <Edit 
-                            handleDelete={props.handleDelete}
-                            handleUpdate={handleUpdate}
-                            recommendation={props.recommendation}
-                        />
-                        <button type="button" onClick={handleDelete} value={recommendation.id}>Delete</button>
-                    </div>
-                    
-                )
-            })}
+                hideAdd={hideAdd}
+                /> : <></>}
+                <div className="rec-container">
+                    {recommendations.map((recommendation) => {
+                    return (
+                        
+                            <div className="rec-card">
+                                <h3 className="h3">Name: {recommendation.name}</h3>
+                                <h4  className="h4">Government: {recommendation.gov}</h4>
+                                <p className="p">Recommendation: {recommendation.description}</p>
+                                <Edit 
+                                handleDelete={props.handleDelete}
+                                handleUpdate={handleUpdate}
+                                recommendation={recommendation}
+                                />
+                                <button type="button" onClick={handleDelete} value={recommendation.id}>Delete Recommendation</button>
+                            </div>
+                        
+                    )
+                    })}
+            </div>
        
            
         </>

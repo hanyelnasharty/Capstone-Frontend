@@ -7,22 +7,22 @@ const Layout = () => {
             <nav>
                 <ul className="nav">
                     <li className="nav-item">
-                        <Link to='/'>Home</Link>
+                        <Link to='/' id="nav-item">Home</Link>
                     </li>
                     <li className="nav-item">
-                        <Link to='/explore'>Explore Egypt</Link>
+                        <Link to='/explore' id="nav-item">Explore Egypt</Link>
                     </li>
                     <li className="nav-item">
-                        <Link to='/about'>About</Link>
+                        <Link to='/about' id="nav-item">About</Link>
                     </li>
                     <li className="nav-item">
-                        <Link to='/contact'>Contact</Link>
+                        <Link to='/contact' id="nav-item">Contact</Link>
                     </li>
                     <li className="nav-item">
-                        <Link to='/recommendations'>Recommendations</Link>
+                        <Link to='/recommendations' id="nav-item">Recommendations</Link>
                     </li>
                     <li className="nav-item">
-                        <Link to='/blog'>Blog</Link>
+                        <Link to='/blog' id="nav-item">Blog</Link>
                     </li>
                 </ul>
             </nav>
