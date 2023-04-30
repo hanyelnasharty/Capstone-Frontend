@@ -53,7 +53,7 @@ const Recommendations = (props) => {
     return (
         <>
             <h1 className="header">User Recommendations</h1>
-            <h3 className="add">Add your recommendations below!</h3>
+            <h3 className="add-rec">Add your recommendations below!</h3>
             <button id="add-btn" onClick={addToggle}>Add</button>
             {add ? <Add 
                 handleChange={props.handleChange} 

@@ -9,7 +9,7 @@ font-family: 'Sedgwick Ave Display', cursive; */
 
 body {
   color: whitesmoke;
-  background-color: #EFCF83;
+  background-color: #0f0f0f;
 }
 
 nav {
@@ -18,7 +18,8 @@ nav {
 
 .nav {
   display: flex;
-  background-color: #54786A;
+  background-color: #d7ff91;
+  border: 1px solid white;
   border-radius: 15px;
   padding: 15px;
 }
@@ -32,25 +33,27 @@ nav {
 
 #nav-item {
   text-decoration: none;
-  color: whitesmoke;
+  color: black;
   font-size: larger;
   font-weight: 600;
 }
 
 .header {
   text-align: center;
-  color: #624B1C;
+  color: whitesmoke;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 40px;
 }
 
 #home {
   text-align: center;
-  color: black;
+  color: whitesmoke;
   line-height: 300%;
 }
 
 #about {
   text-align: center;
-  color: black;
+  color: whitesmoke;
   line-height: 180%;
 }
 
@@ -81,7 +84,7 @@ nav {
   height: 150px;
   width: 200px;
   margin: 0 10px 0 10px;
-  border: solid rgb(229, 187, 187) 5px;
+  border: solid black 5px;
   border-radius: 5px;
 }
 
@@ -114,19 +117,20 @@ nav {
   grid-row-end: 1;
   grid-column-start: 1;
   grid-column-end: 5;
-  border: 2px solid black;
+  border: 2px solid whitesmoke;
   border-radius: 10px;
-  background-color: #54786A;
-  box-shadow: 6px 5px 5px #AA5725;
+  background-color: #d7ff91;
+  box-shadow: 2px 2px 5px white;
 }
 
 .govs {
   grid-column-start: 8;
-  border: 1px solid black;
+  border: 1px solid whitesmoke;
   border-radius: 10px;
   padding: 10px;
-  background-color: #54786A;
-  box-shadow: 6px 5px 5px #AA5725;
+  background-color: #d7ff91;
+  box-shadow: 2px 2px 5px white;
+  color: black;
 }
 
 
@@ -137,11 +141,13 @@ nav {
   text-decoration: underline;
   list-style-type: none;
   font-family: 'Poppins', sans-serif;
+  color: black;
 }
 
 .flag {
   height: 30px;
   width: 30px;
+  border: 1px solid black;
   border-radius: 5px;
   margin-right: 5px;
   float: left;
@@ -165,9 +171,10 @@ h1 {
 }
 
 h2 {
-  font-family: 'Poppins', sans-serif;
+  font-family:  sans-serif;
   font-weight: 700;
-  color: #EFCF83;
+  color: black;
+  font-size: 30px;
 }
 
 h3 {
@@ -178,6 +185,7 @@ h3 {
 
 .h3 {
   color: black;
+  text-decoration: none;
 }
 
 .h4 {
@@ -200,7 +208,7 @@ summary {
   color: black;
   font-family: 'Poppins', sans-serif;
   list-style-type: none;
-  border: 3px solid burlywood;
+  border: 3px solid black;
   border-radius: 10px;
   width: fit-content;
   padding: 5px;
@@ -213,12 +221,26 @@ button {
   border-radius: 5px;
   background-color: crimson;
   color: white;
+  cursor: pointer;
+}
+
+.add-rec {
+  text-decoration: none;
+}
+
+.add-container {
+  padding: 20px;
+  background-color: #d7ff91;
+  width: 450px;
+  height: fit-content;
 }
 
 #add-btn {
   font-family: 'Poppins', sans-serif;
   border-radius: 5px;
-  background-color: rgb(97, 194, 1);
+  background-color: whitesmoke;
+  color: black;
+  cursor: pointer;
 }
 
 .rec-container {
@@ -228,9 +250,35 @@ button {
 }
 
 .rec-card {
-  border: 4px solid black;
+  background-color: #d7ff91;
+  border: 2px solid whitesmoke;
   border-radius: 15px;
   width: 45%;
   margin: 10px;
   padding: 10px;
+}
+
+.video {
+  border: 3px solid black;
+}
+
+.email-container {
+  justify-items: center;
+}
+
+.email {
+  border: 2px solid whitesmoke;
+  border-radius: 20px;
+  width: fit-content;
+  background-color: #d7ff91;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#email {
+  padding: 20px;
+  color: black;
+  text-decoration: none;
+  font-size: 32px;
 }

@@ -14,7 +14,7 @@ const Add = (props) => {
     }
     return (
         <>
-            <div class="container">
+            <div className="add-container">
                 <form onSubmit={handleSubmit}>
                 <div class="form-group row">
                     <label class="col-sm-2 col-form-label" htmlFor="name" className="add">Name: </label>
@@ -39,8 +39,9 @@ const Add = (props) => {
                 <br/>
                 <input type="submit" />
             </form>
+                <button onClick={props.hideAdd}>Cancel</button>
             </div>
-            <button onClick={props.hideAdd}>Cancel</button>
+            
         </>
     )
 }

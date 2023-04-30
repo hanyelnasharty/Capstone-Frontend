@@ -5,11 +5,12 @@ const Blog = () => {
     return (
         <>
             <h1 className="header">Blog</h1>
-            <ReactPlayer
+                 <ReactPlayer
              url={'/videos/luxor.mp4'} 
              controls={true} 
              height='500px'
-             width='250px'
+             width='280px'
+             className="video"
              />
         </>
     )
