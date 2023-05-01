@@ -52,8 +52,8 @@ const Recommendations = (props) => {
   }, [])
     return (
         <>
-            <h3 className="add-rec">Add your recommendations below!</h3>
-            <button id="add-btn" onClick={addToggle}>Add</button>
+            {/* <h3 className="add-rec">Add your recommendations below!</h3> */}
+            <button id="add-btn" onClick={addToggle}>Add Recommendations</button>
             {add ? <Add 
                 handleChange={props.handleChange} 
                 handleSubmit={props.handleSubmit} 
@@ -69,12 +69,15 @@ const Recommendations = (props) => {
                                 <h3 className="h3">Name: {recommendation.name}</h3>
                                 <h4  className="h4">Governorate: {recommendation.gov}</h4>
                                 <p className="p">Recommendation: {recommendation.description}</p>
-                                <Edit 
-                                handleDelete={props.handleDelete}
-                                handleUpdate={handleUpdate}
-                                recommendation={recommendation}
-                                />
-                                <button type="button" onClick={handleDelete} value={recommendation.id}>Delete</button>
+                                <div className="edit-delete">
+                                    <Edit 
+                                    handleDelete={props.handleDelete}
+                                    handleUpdate={handleUpdate}
+                                    recommendation={recommendation}
+                                    />
+                                    <button type="button" onClick={handleDelete} value={recommendation.id}>Delete</button>
+                                </div>
+                                
                             </div>
                         
                     )
