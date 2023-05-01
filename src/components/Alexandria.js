@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Alexandria = (props) => {
     return (
         <>
-            <div className='banner-alex'><h1 className='gov-head'>Alexandria</h1></div>
+            <div className='banner'><h1 className='gov-head'>Alexandria</h1></div>
             <h2>About</h2>
             <p>Alexandria Governorate is a northern coastal region of Egypt, with a population of over 5 million people. It was founded by Alexander the Great in 331 BC and has a rich history as a center of culture, learning, and trade. Today, it's a bustling metropolis that combines its historic past with modern amenities, making it a popular destination for tourists. The governorate is home to many significant historical sites, including the Bibliotheca Alexandrina, and is renowned for its beautiful beaches, vibrant culture, and delicious cuisine. With its unique blend of ancient and modern, Alexandria Governorate is a must-visit destination for anyone interested in exploring the rich history and culture of Egypt.</p>
             <h2>Brief History</h2>

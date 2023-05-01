@@ -52,7 +52,6 @@ const Recommendations = (props) => {
   }, [])
     return (
         <>
-            <h1 className="header">User Recommendations</h1>
             <h3 className="add-rec">Add your recommendations below!</h3>
             <button id="add-btn" onClick={addToggle}>Add</button>
             {add ? <Add 
@@ -68,14 +67,14 @@ const Recommendations = (props) => {
                         
                             <div className="rec-card">
                                 <h3 className="h3">Name: {recommendation.name}</h3>
-                                <h4  className="h4">Government: {recommendation.gov}</h4>
+                                <h4  className="h4">Governorate: {recommendation.gov}</h4>
                                 <p className="p">Recommendation: {recommendation.description}</p>
                                 <Edit 
                                 handleDelete={props.handleDelete}
                                 handleUpdate={handleUpdate}
                                 recommendation={recommendation}
                                 />
-                                <button type="button" onClick={handleDelete} value={recommendation.id}>Delete Recommendation</button>
+                                <button type="button" onClick={handleDelete} value={recommendation.id}>Delete</button>
                             </div>
                         
                     )

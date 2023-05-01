@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Alsharqiya = (props) => {
     return (
         <>
-            <div className='banner-sharqiya'><h1 className='gov-head'>Al-Sharqiya</h1></div>
+            <div className='banner'><h1 className='gov-head'>Al-Sharqiya</h1></div>
             
             <h2>About</h2>
             <p>Al-Sharqia Governorate is located in the eastern Nile Delta region of Egypt and has a rich history dating back to ancient times. It's known for its traditional crafts, vibrant culture, and beautiful architecture. Today, the governorate is home to over 6 million people and is one of the most populous in Egypt. Despite facing challenges such as poverty and unemployment, Al-Sharqia Governorate remains an important part of Egypt's national identity.</p>

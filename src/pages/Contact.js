@@ -3,12 +3,16 @@ import React from "react"
 const Contact = () => {
     return (
         <>
-            <h1 className="header">Contact Us</h1>
             <div className="email-container">
                 <div className="email">
-                <h3 id="email">Email</h3>
-                <h3 id="email">info@egyexpo.com</h3>
-            </div>
+                    <ion-icon name="mail-outline" id="email-icon"></ion-icon><h3 id="email">info@xpoeg.com</h3>
+                </div>
+                <div className="social">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                    <ion-icon name="logo-twitter"></ion-icon>
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </div>
+ 
             </div>
         </>
     )

@@ -1,28 +1,34 @@
 import React from "react"
-import { Outlet, Link } from "react-router-dom";
+import { Outlet, Link, useLocation} from "react-router-dom";
 
 const Layout = () => {
+
+    const location = useLocation();
+
+    const isActive = (pathname) => {
+        return pathname === location.pathname ? 'active' : '';
+    }
     return (
         <>
             <nav>
                 <ul className="nav">
                     <li className="nav-item">
-                        <Link to='/' id="nav-item">Home</Link>
+                        <Link to='/' className={isActive('/')} id="nav-item">Home</Link>
                     </li>
                     <li className="nav-item">
-                        <Link to='/explore' id="nav-item">Explore Egypt</Link>
+                        <Link to='/explore' className={isActive('/explore')} id="nav-item">Explore Egypt</Link>
                     </li>
                     <li className="nav-item">
-                        <Link to='/about' id="nav-item">About</Link>
+                        <Link to='/about' className={isActive('/about')} id="nav-item">About</Link>
                     </li>
                     <li className="nav-item">
-                        <Link to='/contact' id="nav-item">Contact</Link>
+                        <Link to='/contact' className={isActive('/contact')} id="nav-item">Contact</Link>
                     </li>
                     <li className="nav-item">
-                        <Link to='/recommendations' id="nav-item">Recommendations</Link>
+                        <Link to='/recommendations' className={isActive('/recommendations')} id="nav-item">Recommendations</Link>
                     </li>
                     <li className="nav-item">
-                        <Link to='/blog' id="nav-item">Blog</Link>
+                        <Link to='/blog' className={isActive('/blog')} id="nav-item">Blog</Link>
                     </li>
                 </ul>
             </nav>

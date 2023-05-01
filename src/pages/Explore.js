@@ -869,7 +869,6 @@ const Explore = () => {
     }
     return (
         <>
-            <h1 className="header">Explore Egypt</h1>
             <div className="container">
                 <div className="govs">
                     {alexandria ? <Alexandria /> : null}
