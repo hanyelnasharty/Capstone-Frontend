@@ -24,7 +24,7 @@ const Add = (props) => {
                 </div>
                 <br/>
                 <div class="form-group row">
-                    <label class="col-sm-2 col-form-label" htmlFor="gov" className="add">Government: </label>
+                    <label class="col-sm-2 col-form-label" htmlFor="gov" className="add">Governorate: </label>
                     <div class="col-sm-2">
                         <input class="form-control" type="text" value={recommendation.gov} name="gov" onChange={handleChange}/>
                     </div>

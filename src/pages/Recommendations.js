@@ -52,7 +52,6 @@ const Recommendations = (props) => {
   }, [])
     return (
         <>
-            {/* <h3 className="add-rec">Add your recommendations below!</h3> */}
             <button id="add-btn" onClick={addToggle}>Add Recommendations</button>
             {add ? <Add 
                 handleChange={props.handleChange} 
